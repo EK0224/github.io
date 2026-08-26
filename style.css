@@ -8,20 +8,23 @@ html {
 
 body {
   margin: 0;
-  color: #181818;
+  color: #24211d;
   background: #f4efe6;
+
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+   ========================= */
 
 .site-header {
-  width: min(1240px, calc(100% - 80px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
 
-  padding-top: 48px;
+  padding-top: 46px;
 
   display: flex;
   align-items: baseline;
@@ -46,7 +49,7 @@ body {
 }
 
 .site-nav a {
-  color: #555;
+  color: #5e5a54;
   text-decoration: none;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -55,29 +58,39 @@ body {
 }
 
 .site-nav a:hover {
-  color: #111;
+  color: #181818;
 }
 
 
-/* HOMEPAGE */
+/* =========================
+   HOMEPAGE
+   ========================= */
 
 .homepage {
-  width: min(1240px, calc(100% - 80px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
 }
 
-.featured-work {
-  width: 84%;
-  max-width: 1080px;
 
-  margin: 150px auto 220px;
+/* One featured work only */
+
+.featured-work {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 125px auto 240px;
 }
 
 
-/* IMAGE */
+/* =========================
+   FEATURED IMAGE
+   ========================= */
 
 .featured-image-link {
   display: block;
+  width: 100%;
+
+  text-decoration: none;
 }
 
 .featured-image {
@@ -90,16 +103,18 @@ body {
 }
 
 
-/* TEXT BELOW IMAGE */
+/* =========================
+   TEXT BELOW IMAGE
+   ========================= */
 
 .featured-info {
-  margin-top: 26px;
+  margin-top: 24px;
 }
 
 .featured-title {
   display: inline-block;
 
-  color: inherit;
+  color: #24211d;
   text-decoration: none;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -115,9 +130,10 @@ body {
 .featured-meta,
 .featured-type {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.76rem;
+  font-size: 0.75rem;
+  font-weight: 400;
 
-  color: #777;
+  color: #7a756e;
 }
 
 .featured-meta {
@@ -129,7 +145,9 @@ body {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
@@ -139,13 +157,13 @@ body {
   }
 
   .site-header {
-    padding-top: 30px;
+    padding-top: 28px;
 
     display: block;
   }
 
   .site-title {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
   }
 
   .site-nav {
@@ -158,54 +176,15 @@ body {
   .featured-work {
     width: 100%;
 
-    margin-top: 90px;
+    margin-top: 85px;
     margin-bottom: 130px;
   }
 
+  .featured-info {
+    margin-top: 18px;
+  }
+
   .featured-title {
-    font-size: 1.25rem;
-  }
-}  justify-content: center;
-  background: #f1f1f1;
-  color: #999;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.work h3 {
-  margin: 22px 0 4px;
-  font-size: 1.35rem;
-  font-weight: 400;
-}
-
-.work p {
-  margin: 0;
-  color: #777;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.85rem;
-}
-
-@media (max-width: 600px) {
-  .site-header,
-  main {
-    width: min(100% - 30px, 1100px);
-  }
-
-  .site-header {
-    padding: 46px 0 60px;
-  }
-
-  .site-header h1 {
-    font-size: 1.8rem;
-  }
-
-  nav {
-    gap: 18px;
-  }
-
-  .work {
-    margin-bottom: 64px;
+    font-size: 1rem;
   }
 }
