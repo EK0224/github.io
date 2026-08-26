@@ -10,7 +10,6 @@ body {
   margin: 0;
   color: #24211d;
   background: #f4efe6;
-
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
 }
@@ -23,13 +22,11 @@ body {
 .site-header {
   width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
-
   padding-top: 46px;
 
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-
   gap: 40px;
 }
 
@@ -74,7 +71,7 @@ body {
 
 /* =========================
    FEATURED WORK
-   controlled by cover.json
+   Values can be controlled by cover/cover.json
    ========================= */
 
 .featured-work {
@@ -95,18 +92,14 @@ body {
 .featured-image-link {
   display: block;
   width: 100%;
-
   text-decoration: none;
 }
 
 .featured-image {
   display: block;
-
   width: 100%;
   height: auto;
-
   max-height: var(--cover-image-max-height, none);
-
   object-fit: contain;
 }
 
@@ -140,7 +133,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
-
   color: #7a756e;
 }
 
@@ -166,7 +158,6 @@ body {
 
   .site-header {
     padding-top: 28px;
-
     display: block;
   }
 
@@ -176,7 +167,6 @@ body {
 
   .site-nav {
     margin-top: 18px;
-
     gap: 18px;
     flex-wrap: wrap;
   }
@@ -184,7 +174,6 @@ body {
   .featured-work {
     width: 100%;
     max-width: 100%;
-
     margin-top: 85px;
     margin-bottom: 130px;
   }
@@ -200,129 +189,5 @@ body {
   .featured-title {
     font-size: 1rem;
   }
-}/* =========================
-   HOMEPAGE
-   ========================= */
-
-.homepage {
-  width: min(1440px, calc(100% - 64px));
-  margin: 0 auto;
 }
 
-
-/* One featured work only */
-
-.featured-work {
-  width: 100%;
-  max-width: 1320px;
-
-  margin: 125px auto 240px;
-}
-
-
-/* =========================
-   FEATURED IMAGE
-   ========================= */
-
-.featured-image-link {
-  display: block;
-  width: 100%;
-
-  text-decoration: none;
-}
-
-.featured-image {
-  display: block;
-
-  width: 100%;
-  height: auto;
-
-  object-fit: cover;
-}
-
-
-/* =========================
-   TEXT BELOW IMAGE
-   ========================= */
-
-.featured-info {
-  margin-top: 24px;
-}
-
-.featured-title {
-  display: inline-block;
-
-  color: #24211d;
-  text-decoration: none;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-
-.featured-title:hover {
-  opacity: 0.62;
-}
-
-.featured-meta,
-.featured-type {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-
-  color: #7a756e;
-}
-
-.featured-meta {
-  margin-top: 6px;
-}
-
-.featured-type {
-  margin-top: 2px;
-}
-
-
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 700px) {
-
-  .site-header,
-  .homepage {
-    width: calc(100% - 36px);
-  }
-
-  .site-header {
-    padding-top: 28px;
-
-    display: block;
-  }
-
-  .site-title {
-    font-size: 1.2rem;
-  }
-
-  .site-nav {
-    margin-top: 18px;
-
-    gap: 18px;
-    flex-wrap: wrap;
-  }
-
-  .featured-work {
-    width: 100%;
-
-    margin-top: 85px;
-    margin-bottom: 130px;
-  }
-
-  .featured-info {
-    margin-top: 18px;
-  }
-
-  .featured-title {
-    font-size: 1rem;
-  }
-}
