@@ -3,14 +3,15 @@
 }
 
 html {
-  background: #fdfdfb;
+  background: #f4efe6;
 }
 
 body {
   margin: 0;
   color: #181818;
-  background: #fdfdfb;
+  background: #f4efe6;
   font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
 }
 
 
