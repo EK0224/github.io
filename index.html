@@ -3,44 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>A Tiny Piece of the World</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <h1>A Tiny Piece of the World</h1>
 
-    <nav>
-      <a href="#">Essays</a>
-      <a href="#">Travel</a>
-      <a href="#">Photography</a>
-      <a href="#">About</a>
+  <header class="site-header">
+    <a class="site-title" href="index.html">
+      A Tiny Piece of the World
+    </a>
+
+    <nav class="site-nav">
+      <a href="travel.html">Travel</a>
+      <a href="photography.html">Photography</a>
+      <a href="essays.html">Essays</a>
+      <a href="about.html">About</a>
     </nav>
   </header>
 
-  <main>
-    <section class="selected-works">
-      <h2>Selected Works</h2>
 
-      <article class="work">
-        <div class="image-placeholder">
-          Photo
+  <main class="homepage">
+
+    <article class="featured-work">
+
+      <a href="travel/cdmx-ren-jian-yan-huo.html" class="featured-image-link">
+        <img
+          src="images/cdmx/cover.jpg"
+          alt="Mexico City at night"
+          class="featured-image"
+        >
+      </a>
+
+      <div class="featured-info">
+        <a href="travel/cdmx-ren-jian-yan-huo.html" class="featured-title">
+          CDMX | 人间烟火
+        </a>
+
+        <div class="featured-meta">
+          Mexico City · 2026
         </div>
 
-        <h3>CDMX | 人间烟火</h3>
-        <p>Mexico City · 2026</p>
-      </article>
-
-      <article class="work">
-        <div class="image-placeholder">
-          Photo
+        <div class="featured-type">
+          Travel
         </div>
+      </div>
 
-        <h3>San Miguel | 日光唱晚</h3>
-        <p>San Miguel de Allende · 2026</p>
-      </article>
-    </section>
+    </article>
+
   </main>
+
 </body>
 </html>
