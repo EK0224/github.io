@@ -31,7 +31,7 @@
 
   <main class="homepage">
 
-    <article class="featured-work">
+    <article id="featured-work" class="featured-work">
 
       <a
         id="cover-link"
@@ -74,6 +74,7 @@
 
   <script>
     fetch("./cover/cover.json", { cache: "no-store" })
+
       .then(response => {
         if (!response.ok) {
           throw new Error("Could not load cover.json");
@@ -84,6 +85,7 @@
 
       .then(cover => {
 
+        const work = document.getElementById("featured-work");
         const image = document.getElementById("cover-image");
         const imageLink = document.getElementById("cover-link");
         const title = document.getElementById("cover-title");
@@ -91,23 +93,54 @@
         const type = document.getElementById("cover-type");
 
 
+        /* CONTENT */
+
         image.src = cover.image;
         image.alt = cover.alt || cover.title || "";
-
 
         imageLink.href = cover.link || "#";
         title.href = cover.link || "#";
 
-
         title.textContent = cover.title || "";
         meta.textContent = cover.meta || "";
         type.textContent = cover.type || "";
+
+
+        /* LAYOUT */
+
+        const layout = cover.layout || {};
+
+        work.style.setProperty(
+          "--cover-width",
+          layout.width || "100%"
+        );
+
+        work.style.setProperty(
+          "--cover-max-width",
+          layout.maxWidth || "1320px"
+        );
+
+        work.style.setProperty(
+          "--cover-margin-top",
+          layout.marginTop || "125px"
+        );
+
+        work.style.setProperty(
+          "--cover-margin-bottom",
+          layout.marginBottom || "240px"
+        );
+
+        image.style.setProperty(
+          "--cover-image-max-height",
+          layout.imageMaxHeight || "none"
+        );
 
       })
 
       .catch(error => {
         console.error("Cover loading error:", error);
       });
+
   </script>
 
 </body>
