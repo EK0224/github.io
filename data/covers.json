@@ -1,0 +1,20 @@
+{
+  "issues": [
+    {
+      "year": 2026,
+      "month": "August",
+      "monthNumber": 8,
+      "issue": "V2",
+      "title": "A Glance of Time",
+      "folder": "cover/2026-08-V2"
+    },
+    {
+      "year": 2026,
+      "month": "August",
+      "monthNumber": 8,
+      "issue": "V1",
+      "title": "Roman Holiday",
+      "folder": "cover/2026-08-V1"
+    }
+  ]
+}
