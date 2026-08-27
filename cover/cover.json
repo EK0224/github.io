@@ -1,18 +1,16 @@
 {
   "image": "cover/2026-08-V1/homepage.jpg",
-  "alt": "A Glance of Time",
-  "title": "A Glance of Time",
-  "meta": "New York · 2026",
+  "alt": "Roman Holiday",
+  "title": "Roman Holiday",
+  "meta": "Rome · Italy · 2026",
   "type": "Cover",
-  "note": "A study of stillness and movement, caught somewhere between looking and being seen.",
+  "note": "When you find sunshine under time",
   "link": "cover.html",
-
   "layout": {
     "width": "88%",
     "maxWidth": "1280px",
     "marginTop": "72px",
     "marginBottom": "230px",
-
     "aspectRatio": "2 / 1",
     "objectPosition": "center 50%"
   }
