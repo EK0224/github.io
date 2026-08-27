@@ -3,7 +3,7 @@
    ========================= */
 
 .article-page {
-  width: min(1180px, calc(100% - 64px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
   padding: 118px 0 150px;
 }
@@ -43,22 +43,35 @@
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+   Same visual width logic as Travel page preview
+   ========================= */
 
 .article-hero {
-  margin: 0 auto 86px;
-  width: 100%;
+  width: 88%;
+  max-width: 1160px;
+
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 96px;
+  margin-left: auto;
 }
 
 .article-hero img {
   display: block;
+
   width: 100%;
   aspect-ratio: 16 / 9;
+
   object-fit: cover;
+  object-position: center;
 }
 
 
-/* BODY */
+/* =========================
+   BODY
+   ========================= */
 
 .article-body {
   width: min(680px, 100%);
@@ -101,7 +114,9 @@
 }
 
 
-/* FOOTER */
+/* =========================
+   ARTICLE FOOTER
+   ========================= */
 
 .article-footer {
   width: min(680px, 100%);
@@ -123,7 +138,9 @@
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
@@ -138,7 +155,12 @@
   }
 
   .article-hero {
-    margin-bottom: 58px;
+    width: 100%;
+    max-width: none;
+
+    margin-right: 0;
+    margin-bottom: 64px;
+    margin-left: 0;
   }
 
   .article-body {
