@@ -202,8 +202,8 @@ body {
   .site-logo {
   display: block;
 
-  width: 90px;
-  height: 90px;
+  width: 58px;
+  height: 58px;
 
   object-fit: contain;
   flex-shrink: 0;
