@@ -1,0 +1,137 @@
+/* =========================
+   ESSAYS INDEX
+   ========================= */
+
+:root {
+  --essay-paper: #f4efe6;
+  --essay-ink: #24211d;
+  --essay-muted: #7a756e;
+  --essay-faint: #aaa39a;
+}
+
+.site-header {
+  padding-top: 28px;
+  align-items: baseline;
+}
+
+.site-nav a.active {
+  color: var(--essay-ink);
+}
+
+.essays-page {
+  width: min(1280px, calc(100% - 64px));
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.essays-intro {
+  padding: 92px 0 96px;
+}
+
+.essays-intro h1 {
+  margin: 0;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--essay-ink);
+}
+
+.essay-year {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 64px;
+  margin-bottom: 118px;
+}
+
+.essay-year:last-child {
+  margin-bottom: 0;
+}
+
+.essay-year-heading {
+  margin: 0;
+  padding-top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--essay-faint);
+}
+
+.essay-list {
+  min-width: 0;
+}
+
+.essay-entry {
+  margin-bottom: 66px;
+}
+
+.essay-entry:last-child {
+  margin-bottom: 0;
+}
+
+.essay-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.essay-title {
+  margin: 0;
+  font-family:
+    Georgia,
+    "Songti SC",
+    "STSong",
+    "Times New Roman",
+    serif;
+  font-size: 1.18rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--essay-ink);
+}
+
+.essay-meta {
+  margin-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.70rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--essay-muted);
+}
+
+.essay-link:hover .essay-title {
+  opacity: 0.56;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    padding-top: 24px;
+  }
+
+  .essays-page {
+    width: calc(100% - 36px);
+    padding-bottom: 100px;
+  }
+
+  .essays-intro {
+    padding: 72px 0 66px;
+  }
+
+  .essay-year {
+    display: block;
+    margin-bottom: 84px;
+  }
+
+  .essay-year-heading {
+    margin-bottom: 34px;
+  }
+
+  .essay-entry {
+    margin-bottom: 52px;
+  }
+
+  .essay-title {
+    font-size: 1.08rem;
+  }
+}
