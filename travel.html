@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travel — A Tiny Fragment of the World</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./travel.css">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  >
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="site-title" href="index.html">
+      A Tiny Fragment of the World
+    </a>
+
+    <nav class="site-nav">
+      <a href="travel.html" class="active">Travel</a>
+      <a href="photography.html">Photography</a>
+      <a href="essays.html">Essays</a>
+      <a href="cover.html">Cover</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+
+  <main class="travel-page">
+
+    <section class="travel-intro">
+      <h1>Travel</h1>
+    </section>
+
+
+    <section class="travel-browser">
+
+      <aside class="year-rail" aria-label="Travel years">
+        <div id="year-list" class="year-list"></div>
+      </aside>
+
+      <div id="travel-list" class="travel-list"></div>
+
+    </section>
+
+
+    <section class="places-section">
+      <div class="places-heading">Places</div>
+      <div id="travel-map" aria-label="Map of places visited"></div>
+    </section>
+
+  </main>
+
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+
+  <script src="./travel.js"></script>
+
+</body>
+</html>
