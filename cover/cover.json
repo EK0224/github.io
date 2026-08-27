@@ -1,15 +1,15 @@
 {
- "image": "cover/2026-08-V1/homepage.jpg",
-  "alt": "Andrei Dumitru",
+  "image": "cover/2026-08-V1/homepage.jpg",
+  "alt": "Current Cover",
   "title": "A Glance of Time",
   "meta": "New York · 2026",
   "type": "Cover",
   "link": "cover.html",
   "layout": {
-    "width": "56%",
-    "maxWidth": "620px",
-    "marginTop": "82px",
+    "width": "88%",
+    "maxWidth": "1280px",
+    "marginTop": "72px",
     "marginBottom": "230px",
-    "imageMaxHeight": "78vh"
+    "imageMaxHeight": "none"
   }
 }
