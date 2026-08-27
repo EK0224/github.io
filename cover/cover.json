@@ -5,11 +5,10 @@
   "meta": "New York · 2026",
   "type": "Cover",
   "link": "cover.html",
-
   "layout": {
     "width": "56%",
     "maxWidth": "620px",
-    "marginTop": "105px",
+    "marginTop": "82px",
     "marginBottom": "230px",
     "imageMaxHeight": "78vh"
   }
