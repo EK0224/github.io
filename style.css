@@ -120,9 +120,10 @@ body {
   width: 100%;
   height: auto;
 
-  max-height: var(--cover-image-max-height, none);
+  aspect-ratio: var(--cover-aspect-ratio, 2 / 1);
 
-  object-fit: contain;
+  object-fit: cover;
+  object-position: var(--cover-object-position, center);
 }
 
 
@@ -131,7 +132,7 @@ body {
    ========================= */
 
 .featured-info {
-  margin-top: 86px;
+  margin-top: 58px;
 }
 
 .featured-title {
@@ -168,6 +169,24 @@ body {
 }
 
 
+.featured-note {
+  width: min(560px, 100%);
+  margin-top: 30px;
+
+  font-family:
+    Georgia,
+    "Songti SC",
+    "STSong",
+    "Times New Roman",
+    serif;
+
+  font-size: 0.92rem;
+  line-height: 1.75;
+
+  color: #625d56;
+}
+
+
 /* =========================
    FOOTER
    ========================= */
@@ -191,6 +210,12 @@ body {
    ========================= */
 
 @media (max-width: 700px) {
+
+  .featured-note {
+    margin-top: 24px;
+    font-size: 0.9rem;
+  }
+
 
   .site-footer {
     width: calc(100% - 36px);
@@ -244,10 +269,6 @@ body {
 
     margin-top: 70px;
     margin-bottom: 130px;
-  }
-
-  .featured-image {
-    max-height: none;
   }
 
   .featured-info {

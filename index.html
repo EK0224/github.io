@@ -7,7 +7,7 @@
 
   <title>A Tiny Fragment of the World</title>
 
-  <link rel="stylesheet" href="./style.css?v=5">
+  <link rel="stylesheet" href="./style.css?v=6">
 </head>
 
 <body>
@@ -109,6 +109,7 @@
         const title = document.getElementById("cover-title");
         const meta = document.getElementById("cover-meta");
         const type = document.getElementById("cover-type");
+        const note = document.getElementById("cover-note");
 
         image.src = cover.image;
         image.alt = cover.alt || cover.title || "";
@@ -119,8 +120,19 @@
         title.textContent = cover.title || "";
         meta.textContent = cover.meta || "";
         type.textContent = cover.type || "";
+        note.textContent = cover.note || "";
 
         const layout = cover.layout || {};
+
+        image.style.setProperty(
+          "--cover-aspect-ratio",
+          layout.aspectRatio || "2 / 1"
+        );
+
+        image.style.setProperty(
+          "--cover-object-position",
+          layout.objectPosition || "center"
+        );
 
         work.style.setProperty(
           "--cover-width",
