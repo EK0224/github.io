@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-20",
+  "displayDate": "August 2026",
+  "title": "New York, Summer",
+  "images": [
+    {
+      "file": "01.jpg",
+      "layout": "wide",
+      "align": "center"
+    },
+    {
+      "file": "02.jpg",
+      "layout": "portrait",
+      "align": "right"
+    },
+    {
+      "file": "03.jpg",
+      "layout": "wide",
+      "align": "center"
+    },
+    {
+      "file": "04.jpg",
+      "layout": "square",
+      "align": "left"
+    },
+    {
+      "file": "05.jpg",
+      "layout": "portrait",
+      "align": "left"
+    },
+    {
+      "file": "06.jpg",
+      "layout": "medium",
+      "align": "right"
+    }
+  ]
+}
