@@ -1,0 +1,184 @@
+/* =========================
+   PHOTOGRAPHY INDEX — V2
+   Distinct from Travel:
+   - 3:2 previews
+   - narrower image block
+   - image first, title below
+   ========================= */
+
+:root {
+  --photo-ink: #24211d;
+  --photo-muted: #7a756e;
+  --photo-faint: #aaa39a;
+}
+
+.site-header {
+  padding-top: 28px;
+  align-items: baseline;
+}
+
+.site-nav a.active {
+  color: var(--photo-ink);
+}
+
+.photography-page {
+  width: min(1280px, calc(100% - 64px));
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.photography-intro {
+  padding: 92px 0 96px;
+}
+
+.photography-intro h1 {
+  margin: 0;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--photo-ink);
+}
+
+
+/* YEAR */
+
+.photo-year {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 64px;
+  margin-bottom: 126px;
+}
+
+.photo-year:last-child {
+  margin-bottom: 0;
+}
+
+.photo-year-heading {
+  margin: 0;
+  padding-top: 4px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+
+  color: var(--photo-faint);
+}
+
+
+/* SERIES */
+
+.photo-series {
+  margin-bottom: 112px;
+}
+
+.photo-series:last-child {
+  margin-bottom: 0;
+}
+
+.photo-series-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Photography preview deliberately differs from Travel:
+   3:2 ratio, narrower width, centered */
+.photo-preview {
+  display: block;
+
+  width: 74%;
+  margin: 0 auto;
+
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.photo-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: var(--preview-position, center);
+}
+
+/* title comes AFTER image */
+.photo-series-title {
+  width: 74%;
+  margin: 24px auto 0;
+
+  font-family:
+    Georgia,
+    "Songti SC",
+    "STSong",
+    "Times New Roman",
+    serif;
+
+  font-size: 1.18rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: var(--photo-ink);
+}
+
+.photo-series-meta {
+  width: 74%;
+  margin: 8px auto 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.70rem;
+  line-height: 1.45;
+
+  color: var(--photo-muted);
+}
+
+.photo-series-link:hover .photo-preview,
+.photo-series-link:hover .photo-series-title {
+  opacity: 0.72;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .site-header {
+    padding-top: 24px;
+  }
+
+  .photography-page {
+    width: calc(100% - 36px);
+    padding-bottom: 100px;
+  }
+
+  .photography-intro {
+    padding: 72px 0 66px;
+  }
+
+  .photo-year {
+    display: block;
+    margin-bottom: 88px;
+  }
+
+  .photo-year-heading {
+    margin-bottom: 34px;
+  }
+
+  .photo-series {
+    margin-bottom: 78px;
+  }
+
+  .photo-preview,
+  .photo-series-title,
+  .photo-series-meta {
+    width: 100%;
+  }
+
+  .photo-series-title {
+    margin-top: 18px;
+    font-size: 1.08rem;
+  }
+}

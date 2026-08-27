@@ -1,0 +1,150 @@
+/* =========================
+   PHOTOGRAPHY SERIES
+   Detail images keep their original ratio.
+   ========================= */
+
+.site-header {
+  padding-top: 28px;
+  align-items: baseline;
+}
+
+.photo-series-page {
+  width: min(1280px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 104px 0 150px;
+}
+
+.series-header {
+  width: min(820px, 100%);
+  margin: 0 auto 112px;
+}
+
+.series-label {
+  margin-bottom: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: #7a756e;
+}
+
+.series-header h1 {
+  margin: 0;
+  font-family:
+    "Bodoni 72",
+    Didot,
+    "Songti SC",
+    "STSong",
+    "Times New Roman",
+    serif;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #24211d;
+}
+
+.series-meta {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  color: #7a756e;
+}
+
+.series-gallery {
+  width: 100%;
+}
+
+.photo-item {
+  margin-bottom: 128px;
+}
+
+.photo-item:last-child {
+  margin-bottom: 0;
+}
+
+.photo-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.photo-item.wide {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-item.medium {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-item.portrait {
+  width: 46%;
+}
+
+.photo-item.square {
+  width: 58%;
+}
+
+.photo-item.left {
+  margin-left: 4%;
+  margin-right: auto;
+}
+
+.photo-item.right {
+  margin-left: auto;
+  margin-right: 4%;
+}
+
+.photo-item.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.series-back {
+  width: min(820px, 100%);
+  margin: 130px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid #d8d0c5;
+}
+
+.series-back a {
+  color: #7a756e;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.74rem;
+}
+
+.series-back a:hover {
+  color: #24211d;
+}
+
+@media (max-width: 700px) {
+
+  .site-header {
+    padding-top: 24px;
+  }
+
+  .photo-series-page {
+    width: calc(100% - 36px);
+    padding-top: 74px;
+    padding-bottom: 100px;
+  }
+
+  .series-header {
+    margin-bottom: 72px;
+  }
+
+  .photo-item {
+    width: 100% !important;
+    margin: 0 0 72px !important;
+  }
+
+  .series-back {
+    margin-top: 84px;
+  }
+}
