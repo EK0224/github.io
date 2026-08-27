@@ -5,7 +5,7 @@
   "images": [
     {
       "file": "01.jpg",
-      "layout": "wide",
+      "layout": "portrait",
       "align": "center"
     },
 
