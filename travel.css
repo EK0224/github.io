@@ -1,0 +1,271 @@
+:root {
+  --travel-paper: #f4efe6;
+  --travel-ink: #24211d;
+  --travel-muted: #7a756e;
+  --travel-faint: #b9b1a6;
+  --travel-line: #d8d0c5;
+  --travel-map: #e8e1d7;
+}
+
+.travel-page {
+  width: min(1440px, calc(100% - 64px));
+  margin: 0 auto;
+  padding-bottom: 140px;
+}
+
+.travel-intro {
+  padding: 118px 0 92px;
+}
+
+.travel-intro h1 {
+  margin: 0;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--travel-ink);
+}
+
+.travel-browser {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.year-rail {
+  position: sticky;
+  top: 42px;
+}
+
+.year-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 22px;
+}
+
+.year-list::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  bottom: 7px;
+  width: 1px;
+  background: var(--travel-line);
+}
+
+.year-button {
+  position: relative;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--travel-faint);
+}
+
+.year-button::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0.42em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--travel-paper);
+  border: 1px solid var(--travel-faint);
+}
+
+.year-button:hover,
+.year-button.active {
+  color: var(--travel-ink);
+}
+
+.year-button.active::before {
+  background: var(--travel-ink);
+  border-color: var(--travel-ink);
+}
+
+.travel-year-group {
+  display: none;
+}
+
+.travel-year-group.active {
+  display: block;
+}
+
+.travel-entry {
+  margin-bottom: 112px;
+}
+
+.travel-entry:last-child {
+  margin-bottom: 0;
+}
+
+.travel-entry-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.travel-entry-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 760px;
+  object-fit: cover;
+}
+
+.travel-entry-info {
+  margin-top: 22px;
+}
+
+.travel-entry-date,
+.travel-entry-location {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--travel-muted);
+}
+
+.travel-entry-title {
+  margin: 7px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.005em;
+  color: var(--travel-ink);
+}
+
+.travel-entry-link:hover .travel-entry-title {
+  opacity: 0.58;
+}
+
+.places-section {
+  margin-top: 190px;
+  padding-top: 26px;
+  border-top: 1px solid var(--travel-line);
+}
+
+.places-heading {
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--travel-muted);
+}
+
+#travel-map {
+  width: 100%;
+  height: 520px;
+  background: var(--travel-map);
+}
+
+.leaflet-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--travel-map);
+}
+
+.leaflet-control-zoom a {
+  color: var(--travel-ink);
+  background: rgba(244, 239, 230, 0.92);
+  border-bottom-color: var(--travel-line);
+}
+
+.leaflet-control-attribution {
+  font-size: 0.62rem;
+  background: rgba(244, 239, 230, 0.82) !important;
+  color: var(--travel-muted);
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--travel-paper);
+  color: var(--travel-ink);
+  box-shadow: 0 8px 28px rgba(36, 33, 29, 0.10);
+}
+
+.leaflet-popup-content {
+  margin: 15px 17px;
+}
+
+.map-popup-title {
+  margin: 0 0 4px;
+  font-size: 0.86rem;
+  font-weight: 400;
+}
+
+.map-popup-meta {
+  margin: 0;
+  color: var(--travel-muted);
+  font-size: 0.70rem;
+  line-height: 1.5;
+}
+
+.map-popup-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--travel-ink);
+  text-decoration: none;
+  font-size: 0.70rem;
+  border-bottom: 1px solid var(--travel-faint);
+}
+
+@media (max-width: 800px) {
+  .travel-page {
+    width: calc(100% - 36px);
+    padding-bottom: 90px;
+  }
+
+  .travel-intro {
+    padding: 78px 0 58px;
+  }
+
+  .travel-browser {
+    display: block;
+  }
+
+  .year-rail {
+    position: static;
+    margin-bottom: 46px;
+    overflow-x: auto;
+  }
+
+  .year-list {
+    flex-direction: row;
+    gap: 24px;
+    padding-left: 0;
+    padding-bottom: 3px;
+  }
+
+  .year-list::before,
+  .year-button::before {
+    display: none;
+  }
+
+  .travel-entry {
+    margin-bottom: 78px;
+  }
+
+  .travel-entry-image {
+    max-height: none;
+  }
+
+  .places-section {
+    margin-top: 120px;
+  }
+
+  #travel-map {
+    height: 420px;
+  }
+}
