@@ -26,7 +26,8 @@ function renderArchive(issues) {
     const monthDiff = Number(b.monthNumber) - Number(a.monthNumber);
     if (monthDiff !== 0) return monthDiff;
 
-    return issueRank(b.issue) - issueRank(a.issue);
+    /* Within each month: V1 first, then V2 */
+    return issueRank(a.issue) - issueRank(b.issue);
   });
 
   const grouped = {};
