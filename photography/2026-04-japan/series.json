@@ -8,21 +8,13 @@
       "layout": "wide",
       "align": "center"
     },
-    {
-      "file": "02.jpg",
-      "layout": "portrait",
-      "align": "right"
-    },
+
     {
       "file": "03.jpg",
       "layout": "wide",
       "align": "center"
     },
-    {
-      "file": "04.jpg",
-      "layout": "square",
-      "align": "left"
-    },
+
     {
       "file": "05.jpg",
       "layout": "portrait",
