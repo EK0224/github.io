@@ -1,19 +1,13 @@
 {
   "essays": [
     {
-      "date": "2026-08-01",
+      "date": "2026-08-27",
       "displayDate": "August 2026",
-      "title": "All Too Well | 别来无恙",
+      "title": "Tear up the notebook | 飞跃小红书",
       "type": "Essay",
-      "folder": "essays/2026-08-01"
+      "folder": "essays/2026-08-27"
     },
-    {
-      "date": "2026-07-12",
-      "displayDate": "July 2026",
-      "title": "A Past Relationship | 旧情",
-      "type": "Fragment",
-      "folder": "essays/2026-07-12"
-    },
+
     {
       "date": "2025-06-12",
       "displayDate": "June 2025",
