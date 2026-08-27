@@ -1,0 +1,220 @@
+/* =========================
+   COVER ARCHIVE
+   ========================= */
+
+:root {
+  --cover-paper: #f4efe6;
+  --cover-ink: #24211d;
+  --cover-muted: #7a756e;
+  --cover-faint: #b7afa4;
+  --cover-line: #d8d0c5;
+}
+
+
+/* Keep inner-page masthead simple and high */
+.site-header {
+  padding-top: 28px;
+  align-items: baseline;
+}
+
+.cover-page {
+  width: min(1440px, calc(100% - 64px));
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.cover-intro {
+  padding: 92px 0 92px;
+}
+
+.cover-intro h1 {
+  margin: 0;
+
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+
+  color: var(--cover-ink);
+}
+
+
+/* =========================
+   YEAR
+   ========================= */
+
+.cover-year {
+  margin-bottom: 138px;
+}
+
+.cover-year-heading {
+  margin: 0 0 62px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+
+  color: var(--cover-muted);
+}
+
+
+/* =========================
+   MONTH
+   ========================= */
+
+.cover-month {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 56px;
+
+  padding-top: 32px;
+  margin-bottom: 112px;
+
+  border-top: 1px solid var(--cover-line);
+}
+
+.cover-month:last-child {
+  margin-bottom: 0;
+}
+
+.cover-month-heading {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.70rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+
+  color: var(--cover-muted);
+}
+
+
+/* =========================
+   ISSUES
+   ========================= */
+
+.cover-issues {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+  align-items: start;
+}
+
+.cover-issue {
+  min-width: 0;
+}
+
+.cover-image-link {
+  display: block;
+  text-decoration: none;
+}
+
+.cover-image-frame {
+  width: 100%;
+  min-height: 320px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  background: transparent;
+}
+
+.cover-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-height: 720px;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.cover-info {
+  margin-top: 24px;
+}
+
+.cover-title {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.35;
+
+  color: var(--cover-ink);
+}
+
+.cover-meta {
+  margin-top: 6px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.70rem;
+  line-height: 1.45;
+
+  color: var(--cover-muted);
+}
+
+.cover-image-link:hover .cover-title {
+  opacity: 0.6;
+}
+
+
+/* =========================
+   ACTIVE NAV
+   ========================= */
+
+.site-nav a.active {
+  color: var(--cover-ink);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+  .site-header {
+    padding-top: 24px;
+  }
+
+  .cover-page {
+    width: calc(100% - 36px);
+    padding-bottom: 100px;
+  }
+
+  .cover-intro {
+    padding: 72px 0 62px;
+  }
+
+  .cover-year {
+    margin-bottom: 100px;
+  }
+
+  .cover-year-heading {
+    margin-bottom: 42px;
+  }
+
+  .cover-month {
+    display: block;
+    padding-top: 24px;
+    margin-bottom: 82px;
+  }
+
+  .cover-month-heading {
+    margin-bottom: 34px;
+  }
+
+  .cover-issues {
+    grid-template-columns: 1fr;
+    gap: 72px;
+  }
+
+  .cover-image {
+    max-height: none;
+  }
+}
