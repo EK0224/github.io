@@ -23,6 +23,28 @@
       "lng": -100.7452
     },
     {
+      "date": "2026-04-13",
+      "displayDate": "April 2026",
+      "title": "Kyoto | ",
+      "location": "Kyoto",
+      "country": "Japan",
+      "folder": "travel/2026-04-13-V1",
+      "coverPosition": "center 50%",
+      "lat": 35.0116,
+      "lng": 135.768
+    },
+    {
+      "date": "2026-04-17",
+      "displayDate": "April 2026",
+      "title": "Tokyo | ",
+      "location": "Tokyo",
+      "country": "Japan",
+      "folder": "travel/2026-04-17-V1",
+      "coverPosition": "center 50%",
+      "lat": 35.6762,
+      "lng": 139.6503
+    },
+    {
       "date": "2025-05-09",
       "displayDate": "May 2025",
       "title": "Cusco y Soroche | 古斯科与索诺奇",
@@ -46,6 +68,18 @@
       "country": "Mexico",
       "lat": 20.9144,
       "lng": -100.7452
+    },
+    {
+      "name": "Kyoto",
+      "country": "Japan",
+      "lat": 35.0116,
+      "lng": 135.7681
+    },
+    {
+      "name": "Tokyo",
+      "country": "Japan",
+      "lat": 35.6762,
+      "lng": 139.6503
     },
     {
       "name": "Cusco",
