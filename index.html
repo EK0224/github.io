@@ -15,7 +15,13 @@
   <header class="site-header">
 
     <a class="site-title" href="index.html">
-      A Tiny Fragment of the World
+      <img
+        src="./logo.png"
+        alt=""
+        class="site-logo"
+        aria-hidden="true"
+      >
+      <span>A Tiny Fragment of the World</span>
     </a>
 
     <nav class="site-nav">
@@ -92,9 +98,6 @@
         const meta = document.getElementById("cover-meta");
         const type = document.getElementById("cover-type");
 
-
-        /* CONTENT */
-
         image.src = cover.image;
         image.alt = cover.alt || cover.title || "";
 
@@ -104,9 +107,6 @@
         title.textContent = cover.title || "";
         meta.textContent = cover.meta || "";
         type.textContent = cover.type || "";
-
-
-        /* LAYOUT */
 
         const layout = cover.layout || {};
 
@@ -122,7 +122,7 @@
 
         work.style.setProperty(
           "--cover-margin-top",
-          layout.marginTop || "125px"
+          layout.marginTop || "90px"
         );
 
         work.style.setProperty(
@@ -134,7 +134,6 @@
           "--cover-image-max-height",
           layout.imageMaxHeight || "none"
         );
-
       })
 
       .catch(error => {
