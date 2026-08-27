@@ -1,0 +1,160 @@
+/* =========================
+   SHARED ARTICLE PAGE
+   ========================= */
+
+.article-page {
+  width: min(1180px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 118px 0 150px;
+}
+
+.article-header {
+  width: min(760px, 100%);
+  margin: 0 auto 58px;
+}
+
+.article-kicker {
+  margin-bottom: 16px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.69rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: #7a756e;
+}
+
+.article-header h1 {
+  margin: 0;
+
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 4.6vw, 4.8rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: #24211d;
+}
+
+.article-meta {
+  margin-top: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: #7a756e;
+}
+
+
+/* HERO */
+
+.article-hero {
+  margin: 0 auto 86px;
+  width: 100%;
+}
+
+.article-hero img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+
+/* BODY */
+
+.article-body {
+  width: min(680px, 100%);
+  margin: 0 auto;
+
+  font-family:
+    Georgia,
+    "Songti SC",
+    "STSong",
+    "Times New Roman",
+    serif;
+
+  font-size: 1.03rem;
+  line-height: 1.95;
+  color: #2b2824;
+}
+
+.article-body p {
+  margin: 0 0 1.65em;
+}
+
+.article-image {
+  width: min(920px, 136%);
+  margin: 72px 0 72px 50%;
+  transform: translateX(-50%);
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-image figcaption {
+  margin-top: 10px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  color: #8a847c;
+}
+
+
+/* FOOTER */
+
+.article-footer {
+  width: min(680px, 100%);
+  margin: 110px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid #d8d0c5;
+}
+
+.article-footer a {
+  color: #7a756e;
+  text-decoration: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.74rem;
+}
+
+.article-footer a:hover {
+  color: #24211d;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .article-page {
+    width: calc(100% - 36px);
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+
+  .article-header {
+    margin-bottom: 42px;
+  }
+
+  .article-hero {
+    margin-bottom: 58px;
+  }
+
+  .article-body {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .article-image {
+    width: 100%;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .article-footer {
+    margin-top: 78px;
+  }
+}
