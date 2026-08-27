@@ -1,23 +1,23 @@
 {
   "articles": [
     {
-      "date": "2026-07-18",
+      "date": "2026-07-13",
       "displayDate": "July 2026",
       "title": "CDMX | 人间烟火",
       "location": "Mexico City",
       "country": "Mexico",
-      "folder": "travel/2026-07-18-V1",
+      "folder": "travel/2026-07-13-V1",
       "coverPosition": "center 50%",
       "lat": 19.4326,
       "lng": -99.1332
     },
     {
-      "date": "2026-07-14",
+      "date": "2026-07-21",
       "displayDate": "July 2026",
       "title": "San Miguel | 日光唱晚",
       "location": "San Miguel de Allende",
       "country": "Mexico",
-      "folder": "travel/2026-07-14-V1",
+      "folder": "travel/2026-07-21-V1",
       "coverPosition": "center 50%",
       "lat": 20.9144,
       "lng": -100.7452
