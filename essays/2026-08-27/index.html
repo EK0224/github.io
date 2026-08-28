@@ -29,11 +29,20 @@
       object-fit: cover;
     }
 
+    /* Deliberate section breaks for this essay only */
+    .essay-section + .essay-section {
+      margin-top: 3.8em;
+    }
+
     @media (max-width: 700px) {
       .essay-lead-image {
         float: none;
         width: 72%;
         margin: 0 auto 32px;
+      }
+
+      .essay-section + .essay-section {
+        margin-top: 3em;
       }
     }
   </style>
