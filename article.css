@@ -60,8 +60,8 @@
 }
 
 .article-body {
-  width: min(680px, 100%);
-  margin: 0 auto;
+  width: min(760px, calc(100% - 48px));
+  margin: auto auto;
   font-family:
     Georgia,
     "Songti SC",
@@ -136,6 +136,7 @@
   }
 
   .article-body {
+    width: 100%;
     font-size: 1rem;
     line-height: 1.9;
   }
