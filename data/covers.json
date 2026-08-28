@@ -15,6 +15,22 @@
       "issue": "V1",
       "title": "Roman Holiday",
       "folder": "cover/2026-08-V1"
+    },
+    {
+      "year": 2026,
+      "month": "September",
+      "monthNumber": 9,
+      "issue": "V1",
+      "title": "TBD",
+      "folder": "cover/2026-09-V1"
+    },
+    {
+      "year": 2026,
+      "month": "September",
+      "monthNumber": 9,
+      "issue": "V2",
+      "title": "TBD,
+      "folder": "cover/2026-09-V2"
     }
   ]
 }
