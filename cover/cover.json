@@ -1,10 +1,10 @@
 {
-  "image": "cover/2026-08-V2/homepage.jpg",
-  "alt": "A Glance of Time",
-  "title": "A Glance of Time",
-  "meta": "New York · 2026 · August",
+  "image": "cover/2026-09-V1/homepage.jpg",
+  "alt": "Down to the south",
+  "title": "Down to the south",
+  "meta": "Savannah · 2026 · September",
   "type": "Cover",
-  "note": "We live not merely through our days, but through the beauty we leave behind ",
+  "note": "Where the moss kisses the rain,\nsummer still lingers,\nhumidity hanging in the air,\nturning the sunlight a warm yellowish-green.\n\nIt is the world of Gone with the Wind,\nthe pages of The Vampire Diaries.\nIt is the last nostalgic dream,\nstill warm.",
   "link": "cover.html",
   "layout": {
     "width": "88%",
