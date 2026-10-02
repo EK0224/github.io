@@ -18,6 +18,15 @@
   .featured-note {
     color: #625F50;
   }
+
+  html, body { min-height: 100vh; background: #dbe5e3; }
+  .homepage { width: 100%; margin: 0; }
+  .featured-work { position: fixed; inset: 0; width: 100%; max-width: none; margin: 0; z-index: 0; }
+  .featured-image-link { width: 100%; height: 100%; pointer-events: none; }
+  .featured-image { display: block; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center; }
+  .featured-info, .site-footer { display: none; }
+  .site-header { position: relative; z-index: 1; width: 100%; margin: 0; padding: 22px 32px; background: rgba(250,248,241,.82); }
+  @media(max-width:700px) { .site-header { padding: 18px; } }
 </style>
   
 </head>
@@ -61,8 +70,8 @@
       >
         <img
           id="cover-image"
-          src=""
-          alt=""
+          src="cover/2026-09-V2/homepage.png"
+          alt="Homepage cover"
           class="featured-image"
         >
       </a>
@@ -103,81 +112,7 @@
   </footer>
 
 
-  <script>
-    fetch("./cover/cover.json", { cache: "no-store" })
 
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Could not load cover.json");
-        }
-
-        return response.json();
-      })
-
-      .then(cover => {
-
-        const work = document.getElementById("featured-work");
-        const image = document.getElementById("cover-image");
-        const imageLink = document.getElementById("cover-link");
-        const title = document.getElementById("cover-title");
-        const meta = document.getElementById("cover-meta");
-        const type = document.getElementById("cover-type");
-        const note = document.getElementById("cover-note");
-
-        image.src = cover.image;
-        image.alt = cover.alt || cover.title || "";
-
-        imageLink.href = cover.link || "#";
-        title.href = cover.link || "#";
-
-        title.textContent = cover.title || "";
-        meta.textContent = cover.meta || "";
-        type.textContent = cover.type || "";
-        note.textContent = cover.note || "";
-
-        const layout = cover.layout || {};
-
-        image.style.setProperty(
-          "--cover-aspect-ratio",
-          layout.aspectRatio || "2 / 1"
-        );
-
-        image.style.setProperty(
-          "--cover-object-position",
-          layout.objectPosition || "center"
-        );
-
-        work.style.setProperty(
-          "--cover-width",
-          layout.width || "100%"
-        );
-
-        work.style.setProperty(
-          "--cover-max-width",
-          layout.maxWidth || "1320px"
-        );
-
-        work.style.setProperty(
-          "--cover-margin-top",
-          layout.marginTop || "90px"
-        );
-
-        work.style.setProperty(
-          "--cover-margin-bottom",
-          layout.marginBottom || "240px"
-        );
-
-        image.style.setProperty(
-          "--cover-image-max-height",
-          layout.imageMaxHeight || "none"
-        );
-      })
-
-      .catch(error => {
-        console.error("Cover loading error:", error);
-      });
-
-  </script>
 
 </body>
 
