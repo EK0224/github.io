@@ -30,7 +30,8 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  gap: 40px;
+  gap: 24px 40px;
+  flex-wrap: wrap;
 }
 
 .site-title {
@@ -60,10 +61,12 @@ body {
 
 .site-nav {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 12px 30px;
 }
 
 .site-nav a {
+  white-space: nowrap;
   color: #5e5a54;
   text-decoration: none;
 
