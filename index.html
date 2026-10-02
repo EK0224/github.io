@@ -22,6 +22,12 @@
   .site-title, .site-nav a, .featured-title, .featured-meta, .featured-type, .featured-note, .site-footer { text-shadow: 0 1px 8px rgba(255,255,255,.75); }
   .featured-note { color: #625F50; }
   @media(max-width:700px) { .featured-work { padding: 40vh 0 55px; } }
+
+  .homepage { position: absolute; inset: 0; width: 100%; min-height: 100vh; min-height: 100svh; margin: 0; display: grid; place-items: center; pointer-events: none; }
+  .autumn-line { margin: 0; padding: 0 24px; text-align: center; font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif; font-size: clamp(26px, 4vw, 48px); font-weight: 400; letter-spacing: .16em; line-height: 1.8; color: #383b35; text-shadow: 0 1px 10px rgba(255,255,255,.7); }
+  .site-header { z-index: 2; }
+  .site-footer { position: absolute; bottom: 0; left: 0; right: 0; padding-bottom: 24px; }
+  @media(max-height:480px) { .homepage { position: relative; min-height: 180px; }.site-footer { position: relative; } }
 </style>
   
 </head>
@@ -55,50 +61,7 @@
 
 
   <main class="homepage">
-
-    <article id="featured-work" class="featured-work">
-
-      <a
-        id="cover-link"
-        href="#"
-        class="featured-image-link"
-      >
-        <img
-          id="cover-image"
-          src=""
-          alt=""
-          class="featured-image"
-        >
-      </a>
-
-
-      <div class="featured-info">
-
-        <a
-          id="cover-title"
-          href="#"
-          class="featured-title"
-        ></a>
-
-        <div
-          id="cover-meta"
-          class="featured-meta"
-        ></div>
-
-        <div
-          id="cover-type"
-          class="featured-type"
-        ></div>
-        
-        <div
-          id="cover-note"
-          class="featured-note"
-        ></div>
-        
-      </div>
-
-    </article>
-
+    <h1 class="autumn-line" lang="zh-Hans">便道天凉好个秋</h1>
   </main>
 
 
@@ -107,21 +70,7 @@
   </footer>
 
 
-  <script>
-    fetch("./cover/cover.json", { cache: "no-store" })
-      .then(response => {
-        if (!response.ok) throw new Error("Could not load cover.json");
-        return response.json();
-      })
-      .then(cover => {
-        document.getElementById("cover-title").href = cover.link || "cover.html";
-        document.getElementById("cover-title").textContent = cover.title || "";
-        document.getElementById("cover-meta").textContent = cover.meta || "";
-        document.getElementById("cover-type").textContent = cover.type || "";
-        document.getElementById("cover-note").textContent = cover.note || "";
-      })
-      .catch(error => console.error("Cover loading error:", error));
-  </script>
+
 
 </body>
 
